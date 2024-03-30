@@ -1,0 +1,94 @@
+// Importing variable file
+@use '../../partials/variables' as *;
+
+
+// Styling the Hero page
+.hero {
+    background-image: url(../public/assets/hero6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+
+    .overlay {
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color:rgb(0 0 0 / 70%);
+    }
+
+    .text {
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%);
+        width:100%;
+        padding: 3.125rem;
+        color: $whitesmoke;
+        // background-color:rgb(0 0 0 / 10%);
+        // background-color: $transparentColor;
+
+        .text-content {
+            // margin-left: 6rem;
+            text-align: center;
+            line-height: 1.5;
+
+            h4 {
+                font-size: 1.125rem;
+                text-align: left;
+            }
+
+            h2 {
+                font-size: 4rem;
+
+                .first-word {
+                    font-size: 4rem;
+                    color: $green;
+                }
+            }
+
+            p, span {
+                font-size: 1.5rem;
+            }
+
+            p {
+
+                .restaurant-name {
+                    color: $green;
+                }
+            }
+
+            span {
+
+                .last-word {
+                    color: $green;
+                }
+            }
+
+            .restaurant-name,
+            .last-word {
+                font: {
+                    size: 1.5rem;
+                    weight: 800;
+                }
+            }
+
+            .dishes-btn {
+                margin-top: 1.5rem;
+                background-color: $lightGreen;
+                border: .125rem solid $lightGreen;
+
+                a {
+                    color: $whitesmoke;
+                }
+
+                &:hover {
+                    color: $light;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+// Importing partials files
+@use './scss/partials/globals';
+@use './scss/partials/variables' as *;
+
+
+// Importing the components
+@use './scss/components/Home/home';
+@use './scss/components/Hero/hero';
+@use './scss/components/About/about';
+@use './scss/components/Menu/menu';
+@use './scss/components/Menu/dishes';
+@use './scss/components/Menu/drinks';
+@use './scss/components/Menu/deserts';
+@use './scss/components/Staff/staff';
+@use './scss/components/Contact/footer';

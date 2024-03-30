@@ -1,0 +1,78 @@
+// Importing variable file
+@use '../../partials/variables' as *;
+
+// Styling the main part of the menu component
+.menu {
+    .container {
+    
+        .food-holder {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            padding-top: 4rem;
+    
+            .dish {
+                transition: $transition;
+                padding: 2rem;
+    
+                // &:hover {
+                //     box-shadow: .25rem .25rem .625rem rgba(0 0 0 / 40%);
+                //     border-radius: 1rem;
+    
+                //     img {
+                //         transform: scale(1.1);
+                //         filter: brightness(100%);
+                //     }
+                // }
+    
+                img {
+                    width: 14rem;
+                    border-radius: .5rem;
+                    filter: brightness(70%);
+                    transition: $transition;
+    
+                    &:hover {
+                        transform: scale(1.1);
+                        filter: brightness(100%);
+                    }
+                }
+    
+                .text {
+                    padding-top: .5rem;
+    
+                    h3 {
+                        padding-bottom: 1.5rem;
+                        color: $dark;
+                        font-weight: normal;
+                    }
+    
+                    .order {
+                        display: flex;
+                        align-items: center;
+                        gap: 6.5rem;
+    
+                        .price {
+                            color: $dark;
+                            font-weight: 600;
+                        }
+    
+                        a {
+                            color: $whitesmoke;
+                            background-color: $green;
+                            padding: .4rem;
+                            border-radius: .4rem;
+                            border: 1px solid $green;
+                            transition: $transition;
+    
+                            &:hover {
+                                color: $dark;
+                                background-color: transparent;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}

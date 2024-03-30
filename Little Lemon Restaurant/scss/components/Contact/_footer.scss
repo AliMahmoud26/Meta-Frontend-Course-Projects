@@ -1,0 +1,131 @@
+// Importing variable file
+@use '../../partials/variables' as *;
+
+// Styling the Footer page
+.contact {
+    padding: 6rem 6rem 1rem;
+    background-color: rgb(3, 80, 35);
+    color: $light;
+
+    .container {
+
+        .top-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left-footer {
+                img {
+                    width: 260px;
+                }
+
+                .disc {
+                    max-width: 250px;
+                    margin-top: 1rem;
+                    line-height: 1.5;
+                }
+
+                .socials {
+                    display: flex;
+                    gap: 1rem;
+                    margin-top: 1rem;
+
+                    i {
+                        background-color: $lightGreen;
+                        color: $dark;
+                        padding: 1rem;
+                        font-size: 1.5rem;
+                        transition: $transition;
+                        cursor: pointer;
+
+                        &:hover {
+                            &.facebook {
+                                background-color: #1877f2;
+                            }
+    
+                            &.twitter {
+                                background-color: #333;
+                            }
+
+                            &.instagram {
+                                background-color: #f16f04bc;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .center-footer {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        transition: $transition;
+
+                        &:hover {
+                            padding-left: .5rem;
+
+                            i {
+                                color: $whitesmoke;
+                            }
+                        }
+
+                        i {
+                            color: $green;
+                        }
+                        
+                        a {
+                            color: $whitesmoke;
+                            font-size: 1.5rem;
+                            transition: $transition;
+
+                            &:hover {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-footer {
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: .75rem;
+                    margin-bottom: 1.6rem;
+                    color: $whitesmoke;
+                    font-size: 1.25rem;
+
+                    i {
+                        font-size: 1.5rem;
+                    }
+                    
+                    &.phone {
+                        .numbers {
+                            display: flex;
+                            flex-direction: column;
+
+                            > p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        hr {
+            margin-top: 2rem;
+        }
+
+        .bottom-container {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1.125rem;
+        }
+    }
+}

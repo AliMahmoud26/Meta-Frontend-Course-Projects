@@ -1,0 +1,8 @@
+// Importing variable file
+@use '../../partials/variables' as *;
+
+// Styling the drinks component
+.drinks {
+    padding: 4rem 7rem;
+    margin: -12rem 0;
+}

@@ -1,0 +1,101 @@
+// Importing other files
+@use './variables' as *;
+
+// Importing font family
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: {
+        size: 16px;
+        family: "Crimson Text", serif;
+    }
+}
+
+.container {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    color: $light;
+    padding: 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: $transition;
+    font: {
+        size: 1.125rem;
+        family: "Crimson Text", serif;
+    }
+
+    &:hover {
+        color: $lightGreen;
+        background-color: transparent;
+    }
+}
+
+.special-heading {
+    position: relative;
+    color: $green;
+    font: {
+        size: 2rem;
+        family: Lobster, 'sans-serif';
+        weight: normal
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -38px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: .18rem;
+        width: 2rem;
+        background-color: $green;
+    }
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: $whitesmoke;
+        background-color: $green;
+        padding: .5rem 1.5rem;
+        border-radius: .4rem;
+        border: 2px solid $green;
+        transition: $transition;
+        font-size: 1.25rem;
+
+        &:hover {
+            color: $dark;
+            background-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.about .container .left-about img {
+  width: 15rem;
+}
+.about .container .right-about p {
+  line-height: 1.5;
+}/*# sourceMappingURL=about.css.map */

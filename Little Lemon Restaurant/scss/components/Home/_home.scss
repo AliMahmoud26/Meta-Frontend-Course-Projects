@@ -1,0 +1,57 @@
+// Importing variable file
+@use '../../partials/variables' as *;
+
+
+// Styling the Home page
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    position:absolute;
+    left:0;
+    width: 100%;
+    z-index: 2;
+    // background-color: $dark;
+
+    .logo {
+        width: 2.5rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 3rem;
+
+        li {
+            a {
+                color: $light;
+                font-size: 1.5rem;
+
+                &:hover {
+                    color: $lightGreen;
+                    transition: $transition;
+                }
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        
+        i {
+            font-size: 1.25rem;
+            cursor: pointer;
+            color: $light;
+
+            &:hover {
+                color: $lightGreen;
+                transition: $transition;
+            }
+        }
+    }
+}

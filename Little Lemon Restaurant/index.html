@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Lemon App</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar component -->
+    <nav class="header-menu container" id="home">
+      <!-- Logo of the site -->
+      <div class="logo">
+        <a href="#"><img src="public/assets/Asset 9@4x.png" alt="logo"></a>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="form">
+        <i class="fa-solid fa-magnifying-glass search-bar"></i>
+        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+        <div class="signin">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content of whole site -->
+    <main>
+      <!-- Hero component -->
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="text">
+          <div class="text-content">
+            <h2><span class="first-word">Traditional</span> with a twist</h2>
+            <p>Welcome to <span class="restaurant-name">Little Lemon Restaurant</span></p>
+            <span>Little Lemon is a family owned Mediterranean restaurant, focused on traditional recispanes served with a modern <span class="last-word">Twist</span></span><br>
+            <button class="dishes-btn btn"><a href="#menu">Check Our Menu</a></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About component -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="left-about">
+            <img src="public/assets/Asset 20@4x.png" alt="about-image">
+          </div>
+          <div class="right-about">
+            <h4 class="special-heading">About Little Lemon</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi atque, nulla dolores eius iusto repellendus voluptates mollitia. Est animi natus atque necessitatibus pariatur voluptas minus architecto at doloribus numquam!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque expedita cum delectus molestiae nesciunt, deserunt quo, totam ad voluptas explicabo rem corrupti deleniti corporis esse consequuntur dolorem adipisci magnam aspernatur.</p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Menu food component -->
+      <section class="menu food-dishes" id="menu">
+        <div class="menu-header">
+          <h4 class="special-heading">Delicious Dishes</h4>
+          <a href="#">See more</a>
+        </div>
+        <div class="container">
+          <div class="food-holder">
+            <div class="dish">
+              <img src="public/assets/French Fries and Meat.jpg" alt="dish">
+              <div class="text">
+                <h3>French Fries and Meat</h3>
+                <div class="order">
+                  <span class="price">$34.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/bolognese-pasta.png" alt="dish">
+              <div class="text">
+                <h3>Bolognese Pasta</h3>
+                <div class="order">
+                  <span class="price">$22.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/peri chicken.jpg" alt="dish">
+              <div class="text">
+                <h3>Peri Chicken</h3>
+                <div class="order">
+                  <span class="price">$28.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/plov.jpg" alt="dish">
+              <div class="text">
+                <h3>Plov</h3>
+                <div class="order">
+                  <span class="price">$30.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Menu drinks component -->
+      <section class="menu drinks" id="drinks">
+        <div class="menu-header">
+          <h4 class="special-heading">Fresh Drinks</h4>
+          <a href="#">See more</a>
+        </div>
+        <div class="container">
+          <div class="food-holder">
+            <div class="dish">
+              <img src="public/assets/juice.jpg" alt="drinks">
+              <div class="text">
+                <h3>Fresh Juice</h3>
+                <div class="order">
+                  <span class="price">$4.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/coffee.webp" alt="drinks">
+              <div class="text">
+                <h3>Coffee</h3>
+                <div class="order">
+                  <span class="price">$3.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/masala-chai-tea.jpg" alt="drinks">
+              <div class="text">
+                <h3>Masala Chai Tea</h3>
+                <div class="order">
+                  <span class="price">$5.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/Arabic-mint-tea-3.jpg" alt="drinks">
+              <div class="text">
+                <h3>Arabic Tea & Mint</h3>
+                <div class="order">
+                  <span class="price">$3.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu deserte component -->
+      <section class="menu deserts" id="deserts">
+        <div class="menu-header">
+          <h4 class="special-heading">Dessert After Meal</h4>
+          <a href="#">See more</a>
+        </div>
+        <div class="container">
+          <div class="food-holder">
+            <div class="dish">
+              <img src="public/assets/dessert-cups.jpg" alt="dessert">
+              <div class="text">
+                <h3>Dessert Cups</h3>
+                <div class="order">
+                  <span class="price">$6.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/cookies.jpeg" alt="dessert">
+              <div class="text">
+                <h3>Cookies</h3>
+                <div class="order">
+                  <span class="price">$4.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/cakes.jpg" alt="dessert">
+              <div class="text">
+                <h3>Chocolate Cakes</h3>
+                <div class="order">
+                  <span class="price">$3.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish">
+              <img src="public/assets/pies.jpg" alt="dessert">
+              <div class="text">
+                <h3>Blackberry & Apple Pies</h3>
+                <div class="order">
+                  <span class="price">$8.00</span>
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Staff component -->
+      <section class="staff-heading">
+        <div class="container">
+          <div class="menu-header">
+            <h4 class="special-heading">Our Amazing Staff</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="swiper staff" id="staff">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper container">
+          <!-- Slides -->
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/chef.png" alt="chef image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Chef</h4>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sit excepturi mollitia earum nemo, quod unde ea aliquam ex perspiciatis sed non repellendus praesentium. Aliquam dolor fugit dignissimos eveniet placeat.</span>
+              <div class="experience">
+                <div class="experience">
+                  <h4>4 Years of experience</h4>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              <a class="btn" href="#">About me</a>
+            </div>
+          </div>
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/chef2.jpg" alt="chef image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Chef</h4>
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore dolorum necessitatibus consequatur nobis sit nulla tempora, maiores deleniti expedita accusantium veniam porro, quae aliquid, numquam magnam eos? Dolorum, aut adipisci!</span>
+              <div class="experience" style="margin-top: .875rem;">
+                <h4>2 Years of experience</h4>
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <a class="btn" href="#" style="margin-top: 0;">About me</a>
+          </div>
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/baker1.jpg" alt="baker image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Baker</h4>
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia debitis temporibus ad perspiciatis commodi corrupti dicta doloremque nam veritatis saepe dolore alias obcaecati at, dolorum ipsum nulla deserunt laborum a.</span>
+              <div class="experience" style="margin-top: .875rem;">
+                <h4>6 Years of experience</h4>
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <a class="btn" href="#" style="margin-top: 0;">About me</a>
+          </div>
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/baker2.jpg" alt="baker image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Baker</h4>
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia debitis temporibus ad perspiciatis commodi corrupti dicta doloremque nam veritatis saepe dolore alias obcaecati at, dolorum ipsum nulla deserunt laborum a.</span>
+              <div class="experience" style="margin-top: .875rem;">
+                <h4>3 Years of experience</h4>
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </span>
+              </div>
+            </div>
+            <a class="btn" href="#" style="margin-top: 0;">About me</a>
+          </div>
+          <div class="swiper-slide chef-card">
+            <img src="public/assets/accountant.jpg" alt="accountant image">
+            <div class="text">
+              <h2>Somone Name</h2>
+              <h4>Accountant</h4>
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia debitis temporibus ad perspiciatis commodi corrupti dicta doloremque nam veritatis saepe dolore alias obcaecati at, dolorum ipsum nulla deserunt laborum a.</span>
+              <div class="experience" style="margin-top: .875rem;">
+                <h4>3 Years of experience</h4>
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </span>
+              </div>
+            </div>
+            <a class="btn" href="#" style="margin-top: 0;">About me</a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev prev"></div>
+        <div class="swiper-button-next next"></div>
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </section>
+  
+      <!-- Video component -->
+      <section class="video" id="video">
+      </section>
+  
+      <!-- Newsletter component -->
+      <section class="newsletter" id="newsletter">    
+      </section>
+  
+      <!-- Contact component -->
+      <footer class="contact" id="contact">
+        <div class="container">
+          <div class="top-container">
+            <div class="left-footer">
+              <img src="public/assets/Asset 16@4x.png" alt="">
+              <div class="socials">
+                <i class="fa-brands fa-facebook facebook"></i>
+                <i class="fa-brands fa-x-twitter twitter"></i>
+                <i class="fa-brands fa-instagram instagram"></i>
+              </div>
+              <p class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sint atque iusto.</p>
+            </div>
+            <div class="center-footer">
+              <ul>
+                <li><i class="fa-solid fa-angles-right"></i><a href="#home">Home</a></li>
+                <li><i class="fa-solid fa-angles-right"></i><a href="#about">About</a></li>
+                <li><i class="fa-solid fa-angles-right"></i><a href="#menu">Menu</a></li>
+                <li><i class="fa-solid fa-angles-right"></i><a href="#staff">Staff</a></li>
+              </ul>
+            </div>
+            <div class="right-footer">
+              <span>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Country, City, Block Number...</p>
+              </span>
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                <p>Business Hours: From 10:00 To 22:00</p>
+              </span>
+              <span class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <div class="numbers">
+                  <p>+0 123 456 789</p>
+                  <p>+0 123 456 789</p>
+                </div>
+              </span>
+            </div>
+          </div>
+          <hr />
+          <div class="bottom-container">
+            All Rights &copy; Reserved
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      const swiper = new Swiper();
+    </script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
